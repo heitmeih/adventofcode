@@ -62,7 +62,8 @@ typedef struct board {
     }
     bool is_winner() {
         for (int i = 0; i < 5; i++) {
-            if ((chosen[i][0] && chosen[i][1] && chosen[i][2] && chosen[i][3] && chosen[i][4]) || (chosen[0][i] && chosen[1][i] && chosen[2][i] && chosen[3][i] && chosen[4][i])) return true;
+            if ((chosen[i][0] && chosen[i][1] && chosen[i][2] && chosen[i][3] && chosen[i][4]) || 
+                (chosen[0][i] && chosen[1][i] && chosen[2][i] && chosen[3][i] && chosen[4][i])) return true;
         }
         return false;
     }
