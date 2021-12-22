@@ -8,7 +8,7 @@ for root, dirs, files in os.walk("./"):
 
     if '.DS_Store' in files:
         files.remove('.DS_Store')
-    if root.startswith("./.") or root == "./" or len(files) == 0:
+    if root.startswith("./.") or root == "./" or len(files) <= 2:
         continue
     for file in files:
         if not file.endswith('test') and not file.endswith('in') and not file.endswith('exe') and '.' in file:
@@ -81,5 +81,5 @@ for lang in completed:
             total += 1
     print()
 
-print(f"Solved: {total}")
+print(f"Solutions: {total}")
             
