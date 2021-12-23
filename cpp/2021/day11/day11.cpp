@@ -15,6 +15,8 @@ int main() {
     for (int r = 0; getline(infile, line); r++)
         for (int c = 0; c < 10; c++)
             octopuses[r][c] = (char) (line[c] - '0');
+        
+    infile.close();
 
     int total_flash_count = 0;
     for (int step = 0; step > -1; step++) {
