@@ -13,7 +13,7 @@ namespace Advent2021
             var caves = new List<Cave>();
             foreach (string line in File.ReadAllLines("./day12.in"))
             {
-                string[] connection = line.Split("-");
+                string[] connection = line.Split('-');
                 Cave first = new Cave(connection[0]);
                 Cave second = new Cave(connection[1]);
 
