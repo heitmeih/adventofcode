@@ -6,8 +6,8 @@
 
 using namespace std;
 
-long count_fish(long fish[9]) {
-    long count = 0;
+unsigned long count_fish(long fish[9]) {
+    unsigned long count = 0;
     for (int age = 0; age < 9; age++) {
         count += fish[age];
     }

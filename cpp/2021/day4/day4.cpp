@@ -128,14 +128,13 @@ int main() {
             board &bo = boards[i];
             bo.draw_number(num);
             if (bo.is_winner()) {
-                boards.erase(boards.begin() + i);
-                if (boards.size() == num_boards - 1) {
+                if (boards.size() == num_boards) {
                     LOG("Part 1: " << bo.sum_unchosen() * num);
-                } else if (boards.size() == 0) {
+                } else if (boards.size() == 1) {
                     LOG("Part 2: " << bo.sum_unchosen() * num)
                     return 0;
                 }
-                
+                boards.erase(boards.begin() + i);
             }
         }
     }

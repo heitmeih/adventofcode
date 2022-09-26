@@ -84,7 +84,7 @@ struct line {
 
 int main() {
     ifstream infile;
-    infile.open("./day5.test");
+    infile.open("./day5.in");
 
     vector<line> lines;
 

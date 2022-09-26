@@ -6,7 +6,7 @@
 #define LOG(x) cout << x << endl;
 
 #define CANVAS_SIZE 1000
-#define FILENAME "./day5.in"
+#define FILENAME "./day5.test"
 
 using namespace std;
 
