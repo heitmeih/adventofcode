@@ -13,7 +13,7 @@ langs = {
 }
 
 for lang, extension in langs.items():
-    for year in range(2015, 2022):
+    for year in range(2015, 2023):
         for day in range(1, 26):
             dir = f'./{lang}/{year}/day{day}'
             if not os.path.exists(dir):
